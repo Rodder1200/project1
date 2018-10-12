@@ -1,0 +1,29 @@
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+@import "../../node_modules/normalize.scss/normalize.scss";
+
+@import "global/_fonts";
+@import "global/_vars";
+@import "global/_common";
+@import "global/_mixins";
+@import "global/_base";
+@import "global/_button";
+@import "global/_chapter";
+@import "global/_main__logo";
+@import "global/_animation";
+
+@import "sections/_header";
+@import "sections/_nav";
+@import "sections/_info__contacts";
+@import "sections/_hero";
+@import "sections/_welcome";
+@import "sections/_about";
+@import "sections/_menu";
+@import "sections/_services";
+@import "sections/_book";
+@import "sections/_testi";
+@import "sections/_blog";
+@import "sections/_chef";
+@import "sections/_staff";
+@import "sections/_gallery";
+@import "sections/_contacts";
+@import "sections/_footer";

@@ -1,0 +1,51 @@
+.header {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.8rem;
+	color: $main_text_c;
+	letter-spacing: 1.4px;
+	line-height: 2;
+
+	.container {
+		@media only screen and (min-width: 1170px) {
+			width: 1169px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 50px;
+
+		@media only screen and (min-width: 1170px) {
+			justify-content: space-between;
+		}
+
+		@media only screen and (max-width: 730px) {
+			flex-direction: column;
+			flex-wrap: nowrap;
+			align-items: center;
+		}
+
+		i {
+			padding-right: 10px;
+		}
+	}
+
+	&__cart {
+		width: 200px;
+		text-align: left; 
+		padding-left: 30px;
+		margin-top: 5px;
+		line-height: 1.5;
+		font-size: 0.85rem;
+		letter-spacing: 1.6px;
+
+		@media only screen and (max-width: 730px) {
+			text-align: center;
+			margin-top: 10px;
+		}
+	}
+}
+

@@ -1,0 +1,97 @@
+.about {
+  height: 696px;
+  background: #ddd url("../images/about_bg.jpg") center/cover no-repeat;
+  margin-top: 102px;
+  padding-top: 10px;
+
+  .chapter {
+    margin-top: 90px;
+    background: url("../images/olive_branches_light.png") top/73% no-repeat;
+  }
+
+  .chapter .title,
+  .subtitle {
+    color: #fff;
+  }
+
+  .chapter:after {
+    border-color: #918a86;
+  }
+
+  .container {
+    background-color: #fff;
+    display: flex;
+    margin-top: 65px;
+    height: 540px;
+    position: relative;
+    z-index: 1;
+
+    @media only screen and (max-width: 800px) {
+      margin-top: 120px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      height: auto;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__picture {
+    width: 583px;
+    background: #fff url("../images/about_story_bg.jpg") center/cover no-repeat;
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__story {
+    width: 450px;
+    margin-left: 84px;
+    padding-top: 58px;
+
+    @media only screen and (max-width: 800px) {
+      width: auto;
+      margin-left: 10px;
+    }
+
+    @media only screen and (max-width: 1126px) {
+      padding: 0 10px;
+    }
+  }
+
+  &__story__title {
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: $main_text_c;
+    line-height: 1.5;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+  }
+
+  &__story__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    font-weight: regular;
+    color: $light_text_c;
+    line-height: 1.75;
+
+    span {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: $title_text_c;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: bottom;
+      letter-spacing: 0;
+      text-indent: -3px;
+    }
+  }
+
+  .button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 41px;
+  }
+}

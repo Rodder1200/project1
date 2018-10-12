@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Catering">
+    <meta name="author" content="Roman Goncharuk">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script defer src="js/main.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container__nav">
+        <button class="nav_button"><i class="fa fa-bars fa-3x"></i></button>
+        <nav class="nav"><a class="nav__link" href="#home" aria-label="home"><i class="fa fa-home"></i></a><a class="nav__link" href="#about" aria-label="about">about</a><a class="nav__link" href="#pages" aria-label="pages">pages</a><a class="nav__link" href="#services" aria-label="services">services</a><a class="nav__link" href="#menu" aria-label="menu">menu</a><a class="nav__link" href="#gallery" aria-label="gallery">gallery</a><a class="nav__link" href="#blog" aria-label="blog">blog</a><a class="nav__link" href="#contacts" aria-label="contacts">contacts</a>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="header__info">
+          <div class="info__contacts"><a class="info__phone" href="tel:123-456-7890" aria-label="phone"><i class="fa fa-phone"></i><span class="info_contact__text">123-456-7890</span></a><a class="info__mail" href="mailto:info@yoursite.com" aria-label="mail">
+              <div class="info__contact__text">info@yoursite.com</div></a></div>
+          <div class="main__logo">
+            <h3 class="main__logo__title">Royal event</h3>
+            <div class="main__logo__subtitle">catering</div>
+          </div>
+          <div class="header__cart"><a class="cart" href="javascript:void(0);" aria-label="your cart"><i class="fa fa-shopping-cart"></i><span class="contact__text">your cart:</span></a>
+            <div class="items"><span id="totalNum"></span><span class="contact__text">0 items - $0.00</span><span id="totalPrice"></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero" id="home">
+      <h1 class="hero__about">a perfect blend of sensational food</h1><a class="button" href="javascript:void(0);" id="sliderp" aria-label="order service">order service</a>
+      <div class="slider_points"><a class="points point0" href="javascript:void(0);" aria-label="point"></a><a class="points point1" href="javascript:void(0);" aria-label="point"></a><a class="points point2" href="javascript:void(0);" aria-label="point"></a><a class="points point3" href="javascript:void(0);" aria-label="point"></a>
+      </div><a class="next_page bounce" href="#welcome" aria-label="next_page"></a>
+    </section>
+    <section class="welcome" id="welcome">
+          <div class="chapter">
+            <div class="subtitle">catering</div>
+            <h2 class="title">Welcome to the Best Catering Company</h2>
+          </div>
+      <div class="container">
+        <ul class="welcome__list">
+          <li class="welcome__item events">
+            <h3 class="welcome__header">Events</h3><a class="next_page" href="javascript:void(0);" aria-label="next_page"></a>
+          </li>
+          <li class="welcome__item food_drink">
+            <h3 class="welcome__header">Food &amp; Drinks</h3><a class="next_page" href="javascript:void(0);" aria-label="next_page"></a>
+          </li>
+          <li class="welcome__item venues">
+            <h3 class="welcome__header">Venues</h3><a class="next_page" href="javascript:void(0);" aria-label="next_page"></a>
+          </li>
+        </ul>
+      </div><a class="button" href="javascript:void(0);" aria-label="more about us">more about us</a>
+    </section>
+    <section class="about" id="about">
+          <div class="chapter">
+            <div class="subtitle">about us</div>
+            <h2 class="title">A Short Story About Our Company</h2>
+          </div>
+      <div class="container">
+        <div class="about__picture"></div>
+        <div class="about__story">
+          <h4 class="about__story__title">A Perfect Blend of Sensational Food, Inspiring Ideas and Professional Staff</h4>
+          <p class="about__story__text"><span>1997</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cumque suscipit temporibus ipsam alias! Voluptas odit, facilis quasi explicabo, possimus, voluptatum, in ipsam alias repellat sint velit dolores voluptates. Maiores.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, suscipit assumenda hic nulla sint temporibus repellat laboriosam dignissimos. </p><a class="button" href="javascript:void(0);" aria-label="read full story">read full story</a>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+          <div class="chapter">
+            <div class="subtitle">catering</div>
+            <h2 class="title">Our Menu</h2>
+          </div>
+      <div class="container">
+        <ul class="menu__list">
+          <li class="menu__item"><img class="menu__item__picture" src="./images/menu_canapes_bg_cut.png" alt="canapes">
+            <h3 class="menu__header">canapes</h3><a class="next_page" href="javascript:void(0);" aria-label="next_page"></a>
+          </li>
+          <li class="menu__item"><img class="menu__item__picture" src="./images/menu_small_plates_bg_cut.png" alt="small plates">
+            <h3 class="menu__header">small plates</h3><a class="next_page" href="javascript:void(0);" aria-label="next_page"></a>
+          </li>
+          <li class="menu__item"><img class="menu__item__picture" src="./images/menu_sweets_bg_cut.png" alt="sweets">
+            <h3 class="menu__header">sweets</h3><a class="next_page" href="javascript:void(0);" aria-label="next_page"></a>
+          </li>
+          <li class="menu__item"><img class="menu__item__picture" src="./images/menu_drinks_bg_cut.png" alt="drinks">
+            <h3 class="menu__header">drinks</h3><a class="next_page" href="javascript:void(0);" aria-label="next_page"></a>
+          </li>
+        </ul>
+      </div>
+      <p class="menu__other">&amp; much more sensational food &amp; drinks...				</p><a class="button" href="javascript:void(0);" aria-label="view full menu">view full menu</a>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+            <div class="chapter">
+              <div class="subtitle">services</div>
+              <h2 class="title">Planning a Fabulous Event?</h2>
+            </div>
+        <ol class="services__list">
+          <li class="services__item">
+            <h3 class="services__header">weddings</h3>
+            <div class="services__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </li>
+          <li class="services__item">
+            <h3 class="services__header">corporate</h3>
+            <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </li>
+          <li class="services__item">
+            <h3 class="services__header">socials</h3>
+            <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </li>
+          <li class="services__item">
+            <h3 class="services__header">picnics</h3>
+            <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </li>
+          <li class="services__item">
+            <h3 class="services__header">festivals</h3>
+            <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </li>
+          <li class="services__item">
+            <h3 class="services__header">private parties</h3>
+            <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </li>
+        </ol>
+      </div><a class="button" href="javascript:void(0);" aria-label="more services">more services</a>
+    </section>
+    <section class="book">
+          <div class="chapter">
+            <div class="subtitle">book today!</div>
+            <h2 class="title">Book Your Tasting Session or Discuss Your Project</h2>
+          </div><a class="button" href="javascript:void(0);" aria-label="send free request">send free request </a>
+    </section>
+    <section class="testi" id="pages">
+          <div class="chapter">
+            <div class="subtitle">testimionials</div>
+            <h2 class="title">Clients About Us</h2>
+          </div>
+      <div class="container">
+        <div class="testi__item"><a class="prev_page" href="javascript:void(0);" id="testiPrev" aria-label="prev_page"></a><a class="next_page" href="javascript:void(0);" id="testiNext" aria-label="next_page"></a>
+          <div class="testi__image"></div>
+          <p class="testi__quote">"Having worked with a number of caterers over the years, their level of service was notably high and they were integral to making the day a success".</p>
+          <p class="testi__quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto minima ducimus impedit quaerat, in placeat eum quis, veniam atque unde libero vero ut ipsam omnis vel doloremque. Quas, recusandae!".</p>
+          <p class="testi__quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis cumque nulla consequatur quae atque tempore vitae harum? Facere recusandae natus explicabo reprehenderit beatae quas necessitatibus esse aspernatur perspiciatis voluptate!".</p>
+          <p class="testi__quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ab impedit eveniet dolor. Fugit rem animi numquam odit optio dolorum, dignissimos et aperiam nihil ipsum, voluptatem enim dicta, incidunt beatae!".</p>
+          <p class="testi__quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ad autem aliquid laudantium obcaecati tempore ipsum similique voluptates quaerat, omnis, id consectetur explicabo error expedita nam provident eveniet totam repellendus!".</p><sub class="testi__author">laura &amp; Adam Ashley, NY</sub><sub class="testi__author">Steve Jobs, Jmerinka</sub><sub class="testi__author">Bill Gates, Zhashkiv</sub><sub class="testi__author">Mark Zuckerberg, Berdychiv</sub><sub class="testi__author">Jeff Bezos, Kryzhopil</sub>
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog">
+          <div class="chapter">
+            <div class="subtitle">blog</div>
+            <h2 class="title">Recent Articles</h2>
+          </div>
+      <div class="container">
+        <ul class="blog__list">
+          <li class="blog__item"><img class="blog__item__picture" src="./images/blog_img1.png" alt="blog_img1">
+            <p class="blog__time">JUN 20,2016</p>
+            <h3 class="blog__header">We Can Help Find a Location That's Right for You</h3>
+          </li>
+          <li class="blog__item"><img class="blog__item__picture" src="./images/blog_img2.png" alt="blog_img2">
+            <p class="blog__time">JUN 20,2016</p>
+            <h3 class="blog__header">Catering Services for Fabulous Corporate Events</h3>
+          </li>
+          <li class="blog__item"><img class="blog__item__picture" src="./images/blog_img3.png" alt="blog_img3">
+            <p class="blog__time">JUN 20,2016</p>
+            <h3 class="blog__header">Planning a Wedding Menu Can Be Daunting</h3>
+          </li>
+        </ul>
+      </div><a class="button" href="javascript:void(0);" aria-label="more articles">more articles</a>
+    </section>
+    <section class="chef">
+          <div class="chapter">
+            <div class="subtitle">chef</div>
+            <h2 class="title">Who's Behind Great Service?</h2>
+          </div>
+      <div class="container">
+        <div class="chef__picture"></div>
+        <div class="chef__story">
+          <blockquote class="chef__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium suscipit, expedita ab error architecto adipisci ipsum, sint. Aliquid vitae accusamus, facilis atque quaerat officia unde consequuntur sunt dolore laudantium, possimus. Aliquid vitae accusamus, facilis atque quaerat officia unde consequuntur sunt dolore laudantium, possimus. Aliquid vitae accusamus, facilis atque quaerat officia unde consequuntur sunt dolore laudantium, possimus."</blockquote>
+          <h4 class="chef__title">Andreo Moreno, <span>Master-Chef</span></h4><a class="button" href="javascript:void(0);" aria-label="view all team">view all team</a>
+        </div>
+      </div>
+    </section>
+    <section class="staff" id="staff">
+          <div class="chapter">
+            <div class="subtitle">staff</div>
+            <h2 class="title">Meet the Team</h2>
+          </div>
+      <div class="container">
+        <ul class="staff__list">
+          <li class="staff__item"><img class="staff__item__picture" src="./images/staff_founder.png" alt="founder">
+            <h3 class="staff__header">Amanda Finch</h3>
+            <div class="staff__post">Chef, Co-Founder</div>
+          </li>
+          <li class="staff__item"><img class="staff__item__picture" src="./images/staff_chef.png" alt="chef">
+            <h3 class="staff__header">Joseph Verder</h3>
+            <div class="staff__post">Chef</div>
+          </li>
+          <li class="staff__item"><img class="staff__item__picture" src="./images/staff_waiter.png" alt="waiter">
+            <h3 class="staff__header">Anthony Mann</h3>
+            <div class="staff__post">Waiter</div>
+          </li>
+          <li class="staff__item"><img class="staff__item__picture" src="./images/staff_waitress.png" alt="waitress">
+            <h3 class="staff__header">Julia Green</h3>
+            <div class="staff__post">Waitress</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+          <div class="chapter">
+            <div class="subtitle">gallery</div>
+            <h2 class="title">Check Our Recent Projects</h2>
+          </div>
+      <div class="gallery__list"><a href="./images/gallery_img1.png" target="_blank" aria-label="1"><img class="gallery_image" src="./images/gallery_img1.png" alt="gallery_img1"></a><a href="./images/gallery_img2.png" target="_blank" aria-label="2"><img class="gallery_image" src="./images/gallery_img2.png" alt="gallery_img2"></a><a href="./images/gallery_img3.png" target="_blank" aria-label="3"><img class="gallery_image" src="./images/gallery_img3.png" alt="gallery_img3"></a><a href="./images/gallery_img4.png" target="_blank" aria-label="4"><img class="gallery_image" src="./images/gallery_img4.png" alt="gallery_img4"></a><a href="./images/gallery_img5.png" target="_blank" aria-label="5"><img class="gallery_image" src="./images/gallery_img5.png" alt="gallery_img5"></a>
+      </div><a class="button" href="javascript:void(0);" aria-label="view more products">view more products</a>
+    </section>
+    <section class="contacts" id="contacts">
+          <div class="chapter">
+            <div class="subtitle">contact us</div>
+            <h2 class="title">Leave a Feedback or Ask a Question</h2>
+          </div>
+      <form method="post" action="javascript:void(0);">
+        <div class="contacts__container">
+          <input class="contacts__item" type="text" placeholder="your name:" required>
+          <input class="contacts__item" type="email" placeholder="e-mail address:" required title=" ">
+          <textarea class="contacts__item" placeholder="send a message: " required></textarea>
+        </div>
+        <button class="button" type="submit" aria-label="send message">send message 	</button>
+      </form><a class="move_to_top" href="#home" aria-label="TOP">TOP</a>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__info">
+          <div class="footer__contacts">
+            <div class="info__contacts"><a class="info__phone" href="tel:123-456-7890" aria-label="phone"><i class="fa fa-phone"></i><span class="info_contact__text">123-456-7890</span></a><a class="info__mail" href="mailto:info@yoursite.com" aria-label="mail">
+                <div class="info__contact__text">info@yoursite.com</div></a></div>
+          </div>
+          <div class="main__logo">
+            <h3 class="main__logo__title">Royal event</h3>
+            <div class="main__logo__subtitle">catering</div>
+          </div>
+          <div class="footer__address">123, new lenox chicago, il 60606</div>
+        </div>
+        <div class="footer__social"><a href="https://twitter.com" target="_blank" aria-label="twitter.com" rel="noopener"><i class="fa fa-twitter" aria-hidden="true"><span class="visually-hidden">twitter.com</span></i></a><a href="https://facebook.com" target="_blank" aria-label="facebook.com" rel="noopener"><i class="fa fa-facebook" aria-hidden="true"><span class="visually-hidden">facebook.com</span></i></a><a href="https://tumblr.com" target="_blank" aria-label="tumblr.com" rel="noopener"><i class="fa fa-tumblr" aria-hidden="true"><span class="visually-hidden">tumblr.com</span></i></a><a href="https://instagram.com" target="_blank" aria-label="instagram.com" rel="noopener"><i class="fa fa-instagram" aria-hidden="true"><span class="visually-hidden">instagram.com</span></i></a>
+        </div>
+        <p class="footer__text">Ancora &#9400; 2016 All Rights Reserved Terms of Use and Privacy Policy</p>
+      </div>
+    </footer>
+  </body>
+</html>

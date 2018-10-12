@@ -1,0 +1,15 @@
+header.header
+	include _nav
+	.container
+		.header__info
+			include _info__contacts
+			include _main__logo
+			
+			.header__cart
+				a.cart(href=$$ aria-label="your cart")
+					i.fa.fa-shopping-cart
+					span.contact__text your cart:
+				.items
+					span(id="totalNum")
+					span.contact__text 0 items - $0.00
+					span(id="totalPrice")

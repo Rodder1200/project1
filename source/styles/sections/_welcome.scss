@@ -1,0 +1,58 @@
+.welcome {
+  &__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    color: #fff;
+
+    @media only screen and (max-width: 1126px) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    width: 370px;
+    height: 473px;
+
+    @media only screen and (max-width: 650px) {
+      width: 90%;
+    }
+  }
+
+  &__header {
+    height: 40px;
+    margin-top: 220px;
+    padding: 0 35%;
+    font-family: $ff-title;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+
+  .next_page {
+    margin: 200px auto 0;
+  }
+
+  .events {
+    background: url("../images/events_bg.jpg") center/cover no-repeat;
+  }
+
+  .food_drink {
+    background: url("../images/food_drink_bg.jpg") center/cover no-repeat;
+  }
+
+  .venues {
+    background: url("../images/venues_bg.jpg") center/cover no-repeat;
+  }
+
+  .button {
+    margin-top: 70px;
+  }
+
+  .next_page {
+    @include next_page($main_text_c, 8px, $down, #fff, 90px);
+    margin: 175px auto 0;
+  }
+}

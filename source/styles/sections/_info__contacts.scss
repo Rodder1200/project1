@@ -1,0 +1,13 @@
+.info__contacts {
+	width: 200px;
+	text-align: right; 
+	margin-top: 5px;
+	line-height: 1.5;
+	font-size: 0.85rem;
+	letter-spacing: 1.6px;
+
+	@media only screen and (max-width: 730px) {
+		text-align: center;
+		margin-top: -20px;
+	}
+}

@@ -1,0 +1,89 @@
+.contacts {
+	height: 862px;
+	color: $main_text_c;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-weight: bold;
+	background: #ddd url('../images/menu_bg.png') center/cover no-repeat;
+	margin: 110px auto 120px;
+	padding: 1px 0;
+
+
+	&__container {
+		margin: 0 auto;
+		width: 770px;
+		height: 305px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-content: space-between;
+
+		@media only screen and (max-width: 800px) {
+			width: auto;
+		}
+
+	}
+
+	&__item {
+		min-width: 370px;
+		min-height: 50px;
+		background-color: #fff;
+		padding: 20px 45px;
+		border: none;
+
+		@media only screen and (max-width: 800px) and (min-width: 685px) {
+			min-width: 47%;
+			margin: 10px;
+		}
+
+		@media only screen and (max-width: 684px) {
+			min-width: 0;
+			width: 100%;
+			margin: 10px;
+		}
+
+		&:last-child {
+			flex-grow: 1;
+			min-height: 210px;
+			resize: none;
+		}
+
+		&::placeholder {
+			text-transform: uppercase;
+			color: $main_text_c;
+			letter-spacing: 1px;
+		}
+
+		&:focus::placeholder {
+			color: transparent;
+		}
+	}
+
+	.button {
+		margin: 53px auto 0;
+		padding-top: 0;
+		width: 229px;
+
+		@media only screen and (max-width: 684px) {
+			margin-top: 120px;
+		}
+	}
+
+	.move_to_top {
+		@include circle(120px, #fff);
+		font-size: 0.8rem;
+		display: flex;
+		line-height: 2.5;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 60px auto 0;
+			&:before {
+				@include arrow($main_text_c, 8px, $up);
+			}
+
+			&:hover {
+				background: radial-gradient(circle at 50% 50%, $circle_c 30%, #fff 60%);
+			}
+	} 
+}

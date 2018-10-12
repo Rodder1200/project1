@@ -1,0 +1,14 @@
+section.welcome(id="welcome")
+	+chapter('Welcome to the Best Catering Company', 'catering')
+	.container
+		ul.welcome__list
+			li.welcome__item.events
+				h3.welcome__header Events
+				a.next_page(href=$$ aria-label="next_page")
+			li.welcome__item.food_drink
+				h3.welcome__header Food &amp; Drinks
+				a.next_page(href=$$ aria-label="next_page")
+			li.welcome__item.venues
+				h3.welcome__header Venues
+				a.next_page(href=$$ aria-label="next_page")
+	a(href=$$ aria-label="more about us").button more about us

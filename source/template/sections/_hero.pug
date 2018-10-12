@@ -1,0 +1,8 @@
+section.hero(id="home")
+	h1.hero__about a perfect blend of sensational food
+	a(href=$$ id="sliderp" aria-label="order service").button order service
+	.slider_points
+		- for (var x = 0; x < 4; x++)
+			a(class="points point"+x href=$$ aria-label="point")
+	a.next_page.bounce(href="#welcome" aria-label="next_page")
+	

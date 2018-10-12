@@ -1,0 +1,22 @@
+section.menu(id="menu")
+	+chapter('Our Menu', 'catering')
+	.container
+		ul.menu__list
+			li.menu__item
+				img.menu__item__picture(src="./images/menu_canapes_bg_cut.png" alt="canapes")
+				h3.menu__header canapes
+				a.next_page(href=$$ aria-label="next_page")
+			li.menu__item
+				img.menu__item__picture(src="./images/menu_small_plates_bg_cut.png" alt="small plates")
+				h3.menu__header small plates
+				a.next_page(href=$$ aria-label="next_page")
+			li.menu__item
+				img.menu__item__picture(src="./images/menu_sweets_bg_cut.png" alt="sweets")
+				h3.menu__header sweets
+				a.next_page(href=$$ aria-label="next_page")
+			li.menu__item
+				img.menu__item__picture(src="./images/menu_drinks_bg_cut.png" alt="drinks")
+				h3.menu__header drinks
+				a.next_page(href=$$ aria-label="next_page")
+	p.menu__other &amp; much more sensational food &amp; drinks...				
+	a(href=$$ aria-label="view full menu").button view full menu

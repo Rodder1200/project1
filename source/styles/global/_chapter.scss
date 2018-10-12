@@ -1,0 +1,50 @@
+.chapter {
+  width: 369px;
+  margin: 100px auto 65px;
+  text-align: center;
+  background: url("../images/olive_branches_trans.png") top/73% no-repeat;
+
+  @media only screen and (max-width: 800px) {
+    width: 300px;
+    margin: 20px auto;
+  }
+
+  .subtitle {
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: $main_text_c;
+    letter-spacing: 1px;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 0.7rem;
+    }
+  }
+
+  .title {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: $title_text_c;
+    font-family: $ff-main;
+    text-transform: none;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.5rem;
+    }
+  }
+  &:after {
+    @include decor_line($decor_green);
+    border-width: 2px;
+    margin-top: 25px;
+
+    @media only screen and (max-width: 800px) {
+      margin-top: 5px;
+    }
+  }
+}

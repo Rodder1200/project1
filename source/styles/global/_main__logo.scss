@@ -1,0 +1,32 @@
+.main__logo {
+	@extend .header;
+	width: 273px;
+	margin-bottom: 6px;
+	text-align: center;
+	background: url('../images/olive_branches.png') center/contain no-repeat;
+
+	@media only screen and (max-width: 730px) {
+		order: 99;
+		margin-top: 20px;
+	}
+
+	&__title {
+		letter-spacing: 1px;
+		text-indent: -15px;
+		width: 50%;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 0.6;
+		color: $title_text_c;
+		font-family: $ff-title;
+		text-transform: none;
+		margin: 0 auto;
+		padding-top: 8px;
+		padding-bottom: 5px;
+	}
+
+	&__subtitle {
+		font-size: 0.8rem;
+		letter-spacing: 1px;
+	}
+}

@@ -1,0 +1,88 @@
+.testi {
+  padding-top: 1px;
+  padding-bottom: 120px;
+  background: $context_bgc url("../images/menu_bg.png") center/cover no-repeat;
+  overflow: hidden;
+
+  @media only screen and (max-width: 800px) {
+    padding-bottom: 50px;
+  }
+
+  .testi__item {
+    position: relative;
+    height: inherit;
+    padding: 10px 150px;
+    background: #fff center/cover no-repeat;
+
+    @media only screen and (max-width: 800px) {
+      padding: 50px 50px;
+      background: none;
+      background-color: #fff;
+    }
+
+    .prev_page {
+      position: absolute;
+      @include next_page($main_text_c, 7px, $left, $context_bgc, 60px);
+      top: 50%;
+      left: -1.8%;
+      margin: -25px 0 0 -5px;
+      padding-left: 7px;
+      padding-top: 21px;
+    }
+
+    .next_page {
+      position: absolute;
+      @include next_page($main_text_c, 7px, $right, $context_bgc, 60px);
+      top: 50%;
+      left: calc(100% - 52px);
+      margin: -25px 0 0 20px;
+      padding-right: 10px;
+      padding-top: 20px;
+    }
+  }
+
+  .chapter {
+    padding-bottom: 40px;
+  }
+
+  .testi__image {
+    margin: -60px auto 0;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: #fff url("../images/testi_item_image.png") center/cover
+      no-repeat;
+    transition: all 0.5s;
+  }
+
+  .testi__quote {
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $main_text_c;
+    margin-top: 40px;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+    animation: slowChange 1s ease-out;
+
+    &:first-of-type {
+      display: block;
+    }
+  }
+
+  .testi__author {
+    display: none;
+    text-align: center;
+    font-size: 0.85rem;
+    color: $light_text_c;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+    animation: slowChange 1s ease-out;
+
+    &:first-of-type {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+section.contacts(id="contacts")
+	+chapter('Leave a Feedback or Ask a Question', 'contact us')
+	form(method="post" action=$$)
+		.contacts__container
+			input(type="text" placeholder="your name:" required).contacts__item 
+			input(type="email" placeholder="e-mail address:" required title=" ").contacts__item
+			textarea(placeholder="send a message: " required).contacts__item
+		button(type="submit" aria-label="send message").button send message 	
+	a(href="#home" aria-label="TOP").move_to_top TOP

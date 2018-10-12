@@ -1,0 +1,15 @@
+- var linkItems = {twitter:'twitter.com', facebook:'facebook.com', tumblr:'tumblr.com', instagram:'instagram.com'};
+
+footer.footer
+	.container
+		.footer__info
+			.footer__contacts
+				include _info__contacts
+			include _main__logo
+			.footer__address 123, new lenox chicago, il 60606
+		.footer__social
+			each val, index in linkItems
+				a(href="https://" + val target="_blank" aria-label=val rel="noopener")
+					i(class="fa fa-" + index aria-hidden="true")
+						span.visually-hidden=val
+		p.footer__text Ancora &#9400; 2016 All Rights Reserved Terms of Use and Privacy Policy

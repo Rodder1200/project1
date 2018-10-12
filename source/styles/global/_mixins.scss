@@ -1,0 +1,54 @@
+@mixin decor_line($color) {
+	content: "";
+	display: block;
+	border-bottom: 2px solid $color;
+	width: 112px;
+	margin: 0 auto; 
+}
+
+@mixin point($color, $size) {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: $size;
+	height: $size;
+	background-color: $color;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+@mixin arrow($color, $size, $direction) {
+	content: "";
+	display: block;
+	vertical-align: middle;
+	width: $size;
+	height: $size;
+	border-right: 2px solid $color;
+	border-bottom: 2px solid $color;
+	-webkit-transform: rotate($direction);
+	        transform: rotate($direction);
+
+}
+
+@mixin circle($diametr, $color) {
+	display: block;
+	vertical-align: middle;
+	width: $diametr;
+	height: $diametr;
+	border-radius: 50%;
+	background-color: $color;
+}
+
+@mixin next_page($ar_color, $ar_size, $ar_direction, $circ_color, $circ_diametr) {
+	@include circle($circ_diametr, $circ_color);
+	padding-top: $circ_diametr/3;
+
+	&:hover {
+		background: radial-gradient(circle at 50% 40%, #f0d5ba 30%, #fff 60%);
+	}
+		
+	&:after {
+		@include arrow($ar_color, $ar_size, $ar_direction);
+		margin: 0 auto;
+	}
+}

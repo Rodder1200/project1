@@ -1,0 +1,51 @@
+.book {
+  height: 696px;
+  background: #ddd url("../images/book_bg.jpg") center/cover no-repeat;
+  margin-top: 110px;
+  padding-top: 10px;
+
+  .chapter {
+    width: 650px;
+    margin-top: 170px;
+    background: url("../images/olive_branches_light.png") top/40% no-repeat;
+
+    @media only screen and (max-width: 800px) {
+      width: 300px;
+    }
+  }
+
+  .title {
+    color: #fff;
+    font-size: 3rem;
+    line-height: 1.25;
+    letter-spacing: 1px;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  .subtitle {
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  .chapter:after {
+    border-color: #fff;
+    margin-top: 20px;
+  }
+
+  .button {
+    width: 275px;
+    height: 74px;
+    margin-top: -5px;
+    font-size: 0.95rem;
+    padding-top: 27px;
+    letter-spacing: 2px;
+
+    @media only screen and (max-width: 800px) {
+      margin-top: 50px;
+    }
+  }
+}

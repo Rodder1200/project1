@@ -1,0 +1,8 @@
+section.gallery(id="gallery")
+	+chapter("Check Our Recent Projects", 'gallery')
+	.gallery__list
+		- var items = ["1","2","3","4","5"];
+		each item in items
+			a(href="./images/gallery_img"+item+".png" target="_blank" aria-label=item)
+				img.gallery_image(src="./images/gallery_img"+item+".png" alt="gallery_img"+item)
+	a(href=$$ aria-label="view more products").button view more products

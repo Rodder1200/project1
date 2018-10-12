@@ -1,0 +1,98 @@
+.chef {
+  height: 696px;
+  background: #ddd url("../images/chef_bg.jpg") center/cover no-repeat;
+  margin: 105px 0 0;
+  padding-top: 5px;
+
+  .chapter {
+    margin-top: 100px;
+    background: url("../images/olive_branches_light.png") top/73% no-repeat;
+  }
+
+  .chapter .title,
+  .subtitle {
+    color: #fff;
+  }
+
+  .chapter:after {
+    border-color: #918a86;
+  }
+
+  .container {
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+    @media only screen and (max-width: 800px) {
+      margin-top: 60px;
+    }
+  }
+
+  &__picture {
+    width: 583px;
+    background: #fff url("../images/chef.jpg") center/cover no-repeat;
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__story {
+    width: 450px;
+    margin-left: 85px;
+    margin-top: 50px;
+    padding-right: 20px;
+
+    @media only screen and (max-width: 800px) {
+      width: auto;
+      margin-left: 10px;
+    }
+
+    &:before {
+      content: "\201c";
+      font-size: 10rem;
+      width: 48px;
+      color: $big_decor_before;
+      font-weight: bold;
+      margin-left: -10px;
+    }
+  }
+
+  &__title {
+    font-size: 1.275rem;
+    font-weight: bold;
+    color: $main_text_c;
+    letter-spacing: 0;
+    margin-top: 30px;
+
+    &:before {
+      @include decor_line($main_text_c);
+      margin: 0 0 33px;
+    }
+
+    span {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: $light_text_c;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    font-weight: regular;
+    color: $light_text_c;
+    line-height: 1.75;
+    margin: -160px 0 10px;
+    letter-spacing: 0;
+  }
+
+  .button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-bottom: 72px;
+  }
+}

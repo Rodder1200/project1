@@ -1,0 +1,97 @@
+.services {
+  .chapter {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    margin: 0;
+    height: 500px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    color: $main_text_c;
+    background: #fff url("../images/services_bg.jpg") top no-repeat;
+
+    @media only screen and (max-width: 750px) {
+      background: none;
+      height: auto;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 272px;
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: -8px;
+
+    @media only screen and (max-width: 750px) {
+      max-width: 100%;
+      margin-left: 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:nth-child(-n + 3) {
+      align-items: flex-end;
+      text-align: right;
+
+      @media only screen and (max-width: 750px) {
+        text-align: left;
+      }
+    }
+
+    &:before {
+      counter-increment: num;
+      content: "0" counter(num);
+      font-size: 2.5rem;
+      width: 48px;
+      margin: 0 -60px;
+      color: $big_decor_before;
+      font-weight: bold;
+
+      @media only screen and (max-width: 750px) {
+        margin: 0;
+      }
+    }
+  }
+
+  &__header {
+    display: block;
+    text-transform: uppercase;
+    margin: -40px 0 0;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+
+    @media only screen and (max-width: 750px) {
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:after {
+      @include decor_line($main_text_c);
+      margin: 18px 0;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  ol {
+    counter-reset: num;
+  }
+
+  .button {
+    margin-top: -2px;
+  }
+}

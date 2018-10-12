@@ -1,0 +1,9 @@
+.container__nav
+	button.nav_button
+		i.fa.fa-bars.fa-3x
+	nav.nav
+		a.nav__link(href="#home" aria-label="home")
+			i.fa.fa-home
+		- var items = ['about', 'pages', 'services', 'menu', 'gallery', 'blog', 'contacts']
+			each item in items
+				a.nav__link(href="#"+item aria-label=item)= item	

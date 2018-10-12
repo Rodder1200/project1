@@ -1,0 +1,74 @@
+.hero {
+  height: 775px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fff url("../images/bg1.jpg") center/cover no-repeat;
+  transition: all 1s;
+
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 100px;
+  }
+
+  &__about {
+    font-size: 3.8rem;
+    letter-spacing: 5.5px;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1;
+    padding: 10px 0 50px;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 2rem;
+      margin-bottom: 50px;
+    }
+
+    &:before {
+      @include decor_line(white);
+      margin: 192px auto 44px;
+    }
+
+    &:after {
+      @include decor_line(white);
+      margin: 47px auto 10px;
+    }
+  }
+
+  .button {
+    width: 275px;
+    height: 74px;
+    font-size: 0.95rem;
+    padding-top: 27px;
+    letter-spacing: 2px;
+
+    @media only screen and (max-width: 800px) {
+      margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      margin-top: -30px;
+    }
+  }
+
+  .slider_points {
+    margin-top: 85px;
+
+    .points {
+      @include point(white, 8px);
+      margin-left: 19px;
+
+      &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+
+    .active {
+      opacity: 1;
+    }
+  }
+  .next_page {
+    @include next_page($main_text_c, 8px, $down, #fff, 125px);
+    margin: 80px auto 0;
+  }
+}

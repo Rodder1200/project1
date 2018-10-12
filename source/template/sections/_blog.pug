@@ -1,0 +1,17 @@
+section.blog(id="blog")
+	+chapter('Recent Articles', 'blog')
+	.container
+		ul.blog__list
+			li.blog__item
+				img.blog__item__picture(src="./images/blog_img1.png" alt="blog_img1")
+				p.blog__time JUN 20,2016
+				h3.blog__header We Can Help Find a Location That's Right for You
+			li.blog__item
+				img.blog__item__picture(src="./images/blog_img2.png" alt="blog_img2")
+				p.blog__time JUN 20,2016
+				h3.blog__header Catering Services for Fabulous Corporate Events
+			li.blog__item
+				img.blog__item__picture(src="./images/blog_img3.png" alt="blog_img3")
+				p.blog__time JUN 20,2016
+				h3.blog__header Planning a Wedding Menu Can Be Daunting
+	a(href=$$ aria-label="more articles").button more articles
