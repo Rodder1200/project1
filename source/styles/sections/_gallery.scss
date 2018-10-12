@@ -1,54 +1,52 @@
 .gallery {
+  .chapter {
+    margin-top: 60px;
+  }
 
-	.chapter {
-		margin-top: 60px;
-	}
-	
-	.gallery__list {
-		min-width: 1169px;
-		height: 752px;
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-		align-content: space-around;
-		align-items: space-around;
-		flex-wrap: wrap;
-		overflow: hidden;	
+  .gallery__list {
+    min-width: 1169px;
+    height: 752px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
 
-		@media only screen and (min-width: 585px) and (max-width: 1169px) {
-			min-width: 0;
-			height: 2250px;
-			align-items: center;
-		}
+    @media only screen and (min-width: 585px) and (max-width: 1169px) {
+      min-width: 0;
+      height: 2250px;
+      align-items: center;
+    }
 
-		@media only screen and (max-width: 584px) {
-			min-width: 0;
-			height: auto;
-			flex-wrap: nowrap;
-			align-items: center;
-		}
-	}
+    @media only screen and (max-width: 584px) {
+      min-width: 0;
+      height: auto;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }
 
-	.gallery_image {
-		width: 585px;
-		height: 363px;
-		margin: 0 13px;
+  .gallery_image {
+    width: 585px;
+    height: 363px;
+    margin: 0 13px;
 
-		&:last-of-type {
-			height: auto;
-		}
+    &:last-of-type {
+      height: auto;
+    }
 
-		&:hover {
-			box-shadow: 0 0 20px #4f5349;
-		}
+    &:hover {
+      box-shadow: 0 0 20px #4f5349;
+    }
 
-		@media only screen and (max-width: 584px) {
-			width: 50%;
-			height: auto;
-		}
-	}
+    @media only screen and (max-width: 584px) {
+      width: 50%;
+      height: auto;
+    }
+  }
 
-	.button {
-		margin-top: 52px;
-	}
+  .button {
+    margin-top: 52px;
+  }
 }
